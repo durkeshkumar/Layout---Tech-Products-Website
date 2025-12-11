@@ -1,0 +1,2556 @@
+ * {
+     margin: 0;
+     padding: 0;
+     /* overflow-x: hidden; */
+     box-sizing: border-box;
+     font-family: "Inika", serif;
+
+ }
+
+ body {
+     background-color: white;
+ }
+
+ /* nav */
+
+ nav {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     gap: 100px;
+     height: 330px;
+     background-color: #DC9AF2;
+     border-radius: 10px;
+     box-shadow: 0px 0px 10px 0px;
+
+ }
+
+ .brand img {
+     width: 300px;
+ }
+
+ .Navsearch {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     border: 1px solid black;
+     padding: 25px;
+     font-size: 34px;
+     width: 1200px;
+     border-radius: 10px;
+     background-color: white;
+     color: rgb(100, 98, 98);
+ }
+
+ .searchFlx {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     gap: 50px;
+     flex-wrap: wrap;
+ }
+
+ .registerFlx {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     gap: 50px;
+
+ }
+
+ .register {
+     background-color: #13B82E;
+     font-size: 30px;
+     padding: 23px 45px;
+     font-weight: 900;
+     border-radius: 10px;
+     cursor: pointer;
+
+ }
+
+ .navLink {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     gap: 100px;
+     margin-top: 70px;
+     margin-left: 180px;
+ }
+
+ .navLink a {
+     text-decoration: none;
+     color: black;
+     font-size: 40px;
+     font-weight: 700;
+
+ }
+
+ /* ---------notification--------------- */
+
+ .notification {
+     font-size: 25px;
+     width: 1050px;
+     background-color: #e9c9f3;
+     line-height: 2rem;
+     position: absolute;
+     z-index: 99;
+     top: 330px;
+     right: 10px;
+     padding: 20px;
+     display: none;
+ }
+
+ .notiFlx {
+     display: flex;
+     justify-content: space-between;
+     padding: 20px;
+ }
+
+ @media (max-width: 500px) {
+
+     nav {
+         height: auto;
+         padding: 20px 0;
+         gap: 20px;
+     }
+
+     .brand img {
+         width: 150px;
+     }
+
+     .Navsearch {
+         width: 95%;
+         flex-direction: column;
+         gap: 20px;
+         padding: 15px;
+         font-size: 20px;
+     }
+
+     .searchFlx {
+         flex-direction: column;
+         gap: 15px;
+     }
+
+     .registerFlx {
+         flex-direction: column;
+         gap: 15px;
+     }
+
+     .register {
+         font-size: 20px;
+         padding: 12px 25px;
+     }
+
+     .navLink {
+         flex-direction: column;
+         gap: 20px;
+         margin-left: 0;
+     }
+
+     .navLink a {
+         font-size: 26px;
+     }
+
+     .notification {
+         top: 250px;
+         width: 95%;
+         font-size: 20px;
+         right: 0;
+     }
+ }
+
+
+ @media (max-width: 1000px) {
+
+     nav {
+         height: auto;
+         flex-direction: column;
+         gap: 40px;
+         padding: 30px 0;
+     }
+
+     .brand img {
+         width: 200px;
+     }
+
+     .Navsearch {
+         width: 90%;
+         padding: 18px;
+         font-size: 26px;
+     }
+
+     .searchFlx,
+     .registerFlx {
+         gap: 30px;
+     }
+
+     .register {
+         font-size: 24px;
+         padding: 18px 35px;
+     }
+
+     .navLink {
+         gap: 50px;
+         margin-left: 0;
+         margin-top: 40px;
+     }
+
+     .navLink a {
+         font-size: 32px;
+     }
+
+     .notification {
+         width: 90%;
+         right: 0;
+     }
+ }
+
+
+ /* ------------STartUp Image------------------ */
+
+ .startUp img {
+     width: 100%;
+     object-fit: fill;
+     position: relative;
+ }
+
+ .letFlx {
+     display: flex;
+     /* justify-content: center; */
+     align-items: center;
+     gap: 1000px;
+     position: absolute;
+     margin-left: 200px;
+     top: 1430px;
+ }
+
+ .letStart {
+     background-color: rgb(232, 152, 2);
+     font-size: 25px;
+     padding: 17px 40px;
+     font-weight: 700;
+     border-radius: 10px;
+ }
+
+ .social {
+     display: flex;
+     gap: 70px;
+ }
+
+ @media (max-width: 1000px) {
+     .letFlx {
+         gap: 200px;
+         margin-left: 50px;
+         top: 900px;
+         /* adjust lower for tablets */
+     }
+
+     .letStart {
+         font-size: 20px;
+         padding: 14px 30px;
+     }
+
+     .social {
+         gap: 40px;
+     }
+ }
+
+ @media (max-width: 500px) {
+     .startUp img {
+         width: 100%;
+         object-fit: cover;
+     }
+
+     .letFlx {
+         flex-direction: column;
+         gap: 20px;
+         margin-left: 0;
+         left: 50%;
+         transform: translateX(-50%);
+         top: 600px;
+         /* adjust for mobile */
+         text-align: center;
+     }
+
+     .letStart {
+         font-size: 18px;
+         padding: 10px 20px;
+     }
+
+     .social {
+         gap: 20px;
+         justify-content: center;
+     }
+ }
+
+ /* -------------------Home page---------------------- */
+
+ /* <!-- ------------Choose------------------------- --> */
+
+ .choose {
+     font-size: 60px;
+     text-align: center;
+     margin-top: 30px;
+ }
+
+ .chooseImg {
+     display: flex;
+     justify-content: center;
+     gap: 50px;
+     margin-top: 30px;
+ }
+
+ .chooseImg img {
+
+     width: 430px;
+     height: 400px;
+     background-color: rgb(250, 238, 240);
+     border-radius: 10px;
+     box-shadow: 0px 8px 10px -5px rgba(0.3, 0.2, 0.5, 0.3);
+ }
+
+ .chooseContent {
+     font-size: 55px;
+     margin-left: 150px;
+
+ }
+
+ .manetic p {
+     font-size: 30px;
+     text-align: center;
+     margin-top: 20px;
+ }
+
+ .productContext {
+     font-size: 70px;
+     font-weight: 700;
+     text-align: center;
+     margin-bottom: 50px;
+ }
+
+ .watchFlx {
+     display: flex;
+     align-items: center;
+ }
+
+ .watchFlx img {
+     width: 900px;
+     position: relative;
+ }
+
+ .watchContent {
+     background-color: #ff7a22;
+     padding: 30px;
+     width: 1400px;
+     height: 350px;
+     left: 500px;
+     position: absolute;
+
+
+     clip-path: polygon(15% 0%,
+             /* top slope */
+             100% 0%,
+             100% 100%,
+             15% 100%,
+             /* bottom slope */
+             0% 50%
+             /* center left point */
+         );
+
+     /* Optional: shadow like in your image */
+     box-shadow: 0 0 20px rgba(0, 0, 0.5, 0.5);
+ }
+
+ .watchContent h3 {
+     color: white;
+     font-size: 50px;
+     text-align: center;
+
+ }
+
+ .watchContent p {
+     font-size: 35px;
+     float: right;
+
+ }
+
+ /* ---------- Tablet / small laptop --------- */
+ @media (max-width: 1000px) {
+
+     .choose {
+         font-size: 44px;
+         margin-top: 24px;
+     }
+
+     .chooseImg {
+         gap: 30px;
+         flex-wrap: wrap;
+         padding: 0 20px;
+     }
+
+     .chooseImg img {
+         width: 380px;
+         height: 340px;
+     }
+
+     .chooseContent {
+         font-size: 40px;
+         margin-left: 40px;
+         /* reduce large left margin */
+     }
+
+     .manetic p {
+         font-size: 22px;
+     }
+
+     .productContext {
+         font-size: 50px;
+         margin-bottom: 40px;
+     }
+
+     .watchFlx {
+         gap: 20px;
+         align-items: flex-start;
+         /* allow wrapping so image and content stack if needed */
+         flex-wrap: wrap;
+         justify-content: center;
+     }
+
+     .watchFlx img {
+         width: 70%;
+         max-width: 700px;
+         position: relative;
+     }
+
+     .watchContent {
+         /* replace fixed px with percent for responsiveness */
+         background-color: #ff7a22;
+         padding: 22px;
+         width: 88%;
+         max-width: 950px;
+         height: auto;
+         /* let height grow with content */
+         left: 0;
+         /* remove absolute offset */
+         position: relative;
+         /* flow with document */
+         clip-path: polygon(6% 0%, 100% 0%, 100% 100%, 6% 100%, 0% 50%);
+         box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
+         margin: 0 auto;
+         /* center it */
+     }
+
+     .watchContent h3 {
+         font-size: 36px;
+     }
+
+     .watchContent p {
+         font-size: 20px;
+         float: none;
+         text-align: right;
+     }
+ }
+
+ /* ---------- Mobile / small phones --------- */
+ @media (max-width: 500px) {
+
+     .choose {
+         font-size: 34px;
+         margin-top: 18px;
+     }
+
+     .chooseImg {
+         flex-direction: column;
+         gap: 18px;
+         padding: 0 12px;
+         align-items: center;
+     }
+
+     .chooseImg img {
+         width: 100%;
+         max-width: 420px;
+         height: auto;
+         object-fit: cover;
+     }
+
+     .chooseContent {
+         font-size: 28px;
+         margin-left: 0;
+         text-align: center;
+         padding: 0 12px;
+     }
+
+     .manetic p {
+         font-size: 18px;
+     }
+
+     .productContext {
+         font-size: 38px;
+         margin-bottom: 30px;
+         padding: 0 12px;
+     }
+
+     .watchFlx {
+         flex-direction: column;
+         align-items: center;
+         gap: 16px;
+         padding: 0 12px;
+     }
+
+     .watchFlx img {
+         width: 100%;
+         max-width: 360px;
+         position: relative;
+     }
+
+     .watchContent {
+         width: 100%;
+         max-width: 420px;
+         padding: 18px;
+         clip-path: polygon(4% 0%, 100% 0%, 100% 100%, 4% 100%, 0% 50%);
+         position: relative;
+         left: 0;
+         box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12);
+     }
+
+     .watchContent h3 {
+         font-size: 26px;
+         text-align: center;
+     }
+
+     .watchContent p {
+         font-size: 16px;
+         float: none;
+         text-align: center;
+     }
+ }
+
+
+
+
+ /* ------------------footer---------------------------- */
+
+ .footer {
+     background-color: #dbf836;
+     padding: 20px;
+     height: 400px;
+ }
+
+ .footerFlx {
+     display: flex;
+     justify-content: space-evenly;
+     /* align-items: center; */
+
+ }
+
+ .footContent p {
+     font-size: 25px;
+     line-height: 4rem;
+ }
+
+ .contact {
+     display: flex;
+     justify-content: flex-start;
+     align-items: center;
+     gap: 20px;
+ }
+
+ .contact img {
+     width: 30px;
+     height: 30px;
+
+ }
+
+ .footSocial {
+     display: flex;
+     gap: 50px;
+     float: right;
+     margin-right: 100px;
+ }
+
+ @media (max-width: 1000px) {
+     .footer {
+         padding: 28px 24px;
+     }
+
+     .footerFlx {
+         gap: 24px;
+         justify-content: space-around;
+     }
+
+     .footContent p {
+         font-size: 18px;
+         line-height: 1.6;
+     }
+
+     .footSocial {
+         gap: 18px;
+         justify-content: center;
+         flex-basis: 100%;
+         margin-top: 10px;
+     }
+ }
+
+ @media (max-width: 500px) {
+     .footer {
+         padding: 22px 16px;
+     }
+
+     .footerFlx {
+         flex-direction: column;
+         align-items: center;
+         gap: 18px;
+     }
+
+     .footContent {
+         width: 100%;
+         text-align: center;
+         padding: 0 12px;
+     }
+
+     .footContent p {
+         font-size: 16px;
+         line-height: 1.6;
+     }
+
+     .contact {
+         justify-content: center;
+         gap: 10px;
+     }
+
+     .contact img {
+         width: 24px;
+         height: 24px;
+     }
+
+     .footSocial {
+         justify-content: center;
+         gap: 14px;
+         margin-right: 0;
+         float: none;
+         /* ensure float removed if still present elsewhere */
+     }
+ }
+
+
+
+
+ /* -------------------About page---------------------- */
+
+ .aboutFlx {
+     display: flex;
+     justify-content: space-around;
+     gap: 50px;
+     background-color: #DC9AF2;
+     padding: 35px;
+     width: 80%;
+     margin: auto;
+ }
+
+ .aboutFlx:nth-of-type(2) {
+     background-color: #f79553;
+ }
+
+ .aboutFlx:nth-of-type(3) {
+     background-color: #e0f94e;
+ }
+
+ .aboutFlx img {
+     width: 550px;
+
+ }
+
+ .abtContent h3 {
+     font-size: 40px;
+     text-align: center;
+ }
+
+ .abtContent p {
+     font-size: 35px;
+ }
+
+ /* ---------- Tablet / small laptop (≤1000px) ---------- */
+ @media (max-width: 1000px) {
+     .aboutFlx {
+         gap: 30px;
+         padding: 24px;
+         width: 90%;
+         flex-wrap: wrap;
+         /* allow items to wrap to next line */
+         align-items: center;
+     }
+
+     .aboutFlx img {
+         width: 48%;
+         /* two-column feel but responsive */
+         max-width: 480px;
+         height: auto;
+     }
+
+     .abtContent h3 {
+         font-size: 32px;
+         text-align: center;
+     }
+
+     .abtContent p {
+         font-size: 22px;
+     }
+ }
+
+ /* ---------- Mobile / small phones (≤500px) ---------- */
+ @media (max-width: 500px) {
+     .aboutFlx {
+         flex-direction: column;
+         /* stack vertically */
+         gap: 18px;
+         padding: 18px;
+         width: 95%;
+     }
+
+     .aboutFlx img {
+         width: 100%;
+         max-width: 360px;
+         height: auto;
+         margin: 0 auto;
+         border-radius: 8px;
+         /* optional: nicer on small screens */
+     }
+
+     .abtContent h3 {
+         font-size: 26px;
+         text-align: center;
+     }
+
+     .abtContent p {
+         font-size: 18px;
+         text-align: center;
+     }
+ }
+
+
+ /* ----------------Product-------------------- */
+
+ .categories {
+     font-size: 75px;
+     margin-left: 80px;
+ }
+
+ @media (max-width: 1000px) {
+     .categories {
+         font-size: 55px;
+         margin-left: 40px;
+     }
+ }
+
+ @media (max-width: 500px) {
+     .categories {
+         font-size: 35px;
+         margin-left: 0;
+         text-align: center;
+     }
+ }
+
+
+ /* ----------------Service page -------------------- */
+
+ .service {
+     font-size: 75px;
+     margin-left: 80px;
+     text-align: center;
+ }
+
+ .service p {
+     font-size: 50px;
+ }
+
+
+ .serviceFlx {
+     display: flex;
+     justify-content: center;
+     gap: 50px;
+     background-color: #DC9AF2;
+     padding: 25px;
+     width: 60%;
+     margin: auto;
+     border-radius: 20px;
+     margin-bottom: 80px;
+     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.25);
+ }
+
+ .serviceFlx img {
+     width: 300px;
+     height: 340px;
+ }
+
+
+
+ .serviceContent h3 {
+     font-size: 40px;
+     text-align: center;
+ }
+
+ .serviceContent p {
+     font-size: 30px;
+     line-height: 3rem;
+ }
+
+
+ .serviceWrapper .serviceFlx:nth-child(2) {
+     background-color: #fb914b;
+ }
+
+ .serviceWrapper .serviceFlx:nth-child(3) {
+     background-color: #21A8A2;
+ }
+
+ .serviceWrapper .serviceFlx:nth-child(4) {
+     background-color: pink;
+ }
+
+ @media (max-width: 1000px) {
+     .service {
+         font-size: 55px;
+         margin-left: 0;
+     }
+
+     .service p {
+         font-size: 36px;
+     }
+
+     .serviceFlx {
+         width: 80%;
+         gap: 30px;
+         padding: 20px;
+         flex-wrap: wrap;
+         /* allow items to break into next line */
+     }
+
+     .serviceFlx img {
+         width: 240px;
+         height: 270px;
+     }
+
+     .serviceContent h3 {
+         font-size: 32px;
+     }
+
+     .serviceContent p {
+         font-size: 24px;
+         line-height: 2.2rem;
+     }
+ }
+
+ @media (max-width: 500px) {
+     .service {
+         font-size: 38px;
+         margin-left: 0;
+         text-align: center;
+     }
+
+     .service p {
+         font-size: 26px;
+     }
+
+     .serviceFlx {
+         flex-direction: column;
+         width: 95%;
+         gap: 18px;
+         padding: 15px;
+     }
+
+     .serviceFlx img {
+         width: 200px;
+         height: 230px;
+         margin: 0 auto;
+     }
+
+     .serviceContent h3 {
+         font-size: 26px;
+     }
+
+     .serviceContent p {
+         font-size: 18px;
+         line-height: 1.8rem;
+         text-align: center;
+     }
+ }
+
+
+
+ /* ----------------Blogs page -------------------- */
+
+ .blogs {
+     font-size: 50px;
+     margin-left: 80px;
+ }
+
+ .blogsFlx {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     gap: 50px;
+     background-color: #21A8A2;
+     border-radius: 10px;
+     padding: 10px;
+     width: 90%;
+     margin: auto;
+ }
+
+
+ .blogsFlx img {
+     width: 500px;
+
+ }
+
+ .blogsContent h3 {
+     font-size: 40px;
+     text-align: center;
+     font-weight: bolder;
+ }
+
+ .blogsContent p {
+     font-size: 30px;
+ }
+
+ span {
+     color: white;
+     text-align: center;
+     font-size: 25px;
+ }
+
+ @media (max-width: 1000px) {
+
+     .blogs {
+         font-size: 38px;
+         margin-left: 40px;
+     }
+
+     .blogsFlx {
+         flex-wrap: wrap;
+         gap: 30px;
+         padding: 20px;
+     }
+
+     .blogsFlx img {
+         width: 350px;
+     }
+
+     .blogsContent h3 {
+         font-size: 32px;
+     }
+
+     .blogsContent p {
+         font-size: 24px;
+     }
+
+     span {
+         font-size: 22px;
+     }
+ }
+
+ @media (max-width: 500px) {
+
+     .blogs {
+         font-size: 28px;
+         margin-left: 0;
+         text-align: center;
+     }
+
+     .blogsFlx {
+         flex-direction: column;
+         padding: 15px;
+         gap: 20px;
+     }
+
+     .blogsFlx img {
+         width: 100%;
+         max-width: 350px;
+         height: auto;
+         margin: 0 auto;
+     }
+
+     .blogsContent h3 {
+         font-size: 26px;
+     }
+
+     .blogsContent p {
+         font-size: 18px;
+         text-align: center;
+     }
+
+     span {
+         font-size: 18px;
+         text-align: center;
+     }
+ }
+
+
+
+ /* -----------products----------------- */
+
+ .productFlx {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-wrap: wrap;
+     gap: 230px;
+     margin-left: 100px;
+ }
+
+ /* ------------------------- */
+
+ .products {
+     width: 380px;
+
+ }
+
+ .productImg {
+     width: 420px;
+ }
+
+ .productPrice {
+     display: flex;
+     justify-content: space-evenly;
+     align-items: center;
+     gap: 140px;
+
+     font-size: 30px;
+ }
+
+ .buynowFlx {
+     display: flex;
+     justify-content: space-evenly;
+     align-items: center;
+     gap: 40px;
+
+     font-size: 30px;
+     margin-top: 20px;
+ }
+
+ .buy {
+     background-color: #13B82E;
+     color: white;
+     padding: 10px 30px;
+     border-radius: 10px;
+ }
+
+ .star {
+     width: 130px;
+
+ }
+
+ @media (max-width: 1000px) {
+
+     .productFlx {
+         gap: 80px;
+         margin-left: 0;
+     }
+
+     .products {
+         width: 320px;
+     }
+
+     .productImg {
+         width: 320px;
+     }
+
+     .productPrice {
+         gap: 60px;
+         font-size: 24px;
+     }
+
+     .buynowFlx {
+         gap: 20px;
+         font-size: 24px;
+     }
+
+     .star {
+         width: 100px;
+     }
+
+     .buy {
+         padding: 8px 20px;
+     }
+ }
+
+ @media (max-width: 500px) {
+
+     .productFlx {
+         flex-direction: column;
+         gap: 40px;
+         margin-left: 0;
+     }
+
+     .products {
+         width: 100%;
+         max-width: 320px;
+         margin: 0 auto;
+     }
+
+     .productImg {
+         width: 100%;
+         max-width: 300px;
+         height: auto;
+         margin: 0 auto;
+     }
+
+     .productPrice {
+         justify-content: space-between;
+         gap: 10px;
+         font-size: 20px;
+         padding: 0 10px;
+     }
+
+     .buynowFlx {
+         justify-content: center;
+         gap: 15px;
+         font-size: 20px;
+     }
+
+     .buy {
+         padding: 6px 16px;
+         font-size: 18px;
+     }
+
+     .star {
+         width: 80px;
+     }
+ }
+
+
+
+ /* <!-- -------------All Brand------------------- --> */
+
+ .allBrand {
+     font-size: 50px;
+     text-align: center;
+ }
+
+ .brands {
+     font-size: 60px;
+     margin-left: 150px;
+     margin-bottom: 70px;
+ }
+
+ .brandFlx {
+     display: flex;
+     justify-content: flex-start;
+     align-items: center;
+     flex-wrap: wrap;
+     gap: 290px;
+     margin-left: 350px;
+     margin-bottom: 120px;
+ }
+
+ .brandFlx img {
+     width: 600px;
+ }
+
+ @media (max-width: 1000px) {
+
+     .allBrand {
+         font-size: 38px;
+     }
+
+     .brands {
+         font-size: 45px;
+         margin-left: 40px;
+         margin-bottom: 40px;
+     }
+
+     .brandFlx {
+         gap: 120px;
+         margin-left: 0;
+         justify-content: center;
+     }
+
+     .brandFlx img {
+         width: 380px;
+     }
+ }
+
+ @media (max-width: 500px) {
+
+     .allBrand {
+         font-size: 28px;
+     }
+
+     .brands {
+         font-size: 32px;
+         text-align: center;
+         margin-left: 0;
+         margin-bottom: 25px;
+     }
+
+     .brandFlx {
+         flex-direction: column;
+         gap: 30px;
+         margin-left: 0;
+         margin-bottom: 60px;
+         align-items: center;
+     }
+
+     .brandFlx img {
+         width: 100%;
+         max-width: 300px;
+         height: auto;
+     }
+ }
+
+
+
+ /* <!-- ----------------------Vivo------------------------- --> */
+
+ .mobileBrandFlx {
+     display: flex;
+     justify-content: center;
+     flex-wrap: wrap;
+     gap: 50px;
+ }
+
+ .mobileBrand {
+     width: 450px;
+     height: 520px;
+     background-color: rgb(218, 216, 216);
+     box-shadow: 0 8px 10px rgba(0, 0, 0, 0.25);
+     border-radius: 20px;
+ }
+
+ .mobBrand {
+     width: 330px;
+     display: block;
+     margin: auto;
+     padding: 20px;
+ }
+
+ /* --------- Tablet / small laptop (≤1000px) --------- */
+ @media (max-width: 1000px) {
+     .mobileBrandFlx {
+         gap: 30px;
+         padding: 0 20px;
+         justify-content: center;
+     }
+
+     .mobileBrand {
+         width: 360px;
+         height: auto;
+         /* allow height to grow with content */
+         padding-bottom: 18px;
+         border-radius: 16px;
+     }
+
+     .mobBrand {
+         width: 280px;
+         padding: 18px;
+     }
+ }
+
+ /* --------- Mobile / small phones (≤500px) --------- */
+ @media (max-width: 500px) {
+     .mobileBrandFlx {
+         flex-direction: column;
+         gap: 18px;
+         padding: 0 12px;
+         align-items: center;
+     }
+
+     .mobileBrand {
+         width: 100%;
+         max-width: 340px;
+         /* keeps cards readable on most phones */
+         height: auto;
+         background-color: rgb(218, 216, 216);
+         box-shadow: 0 6px 12px rgba(0, 0, 0, 0.12);
+         border-radius: 14px;
+         padding: 12px;
+     }
+
+     .mobBrand {
+         width: 100%;
+         max-width: 300px;
+         display: block;
+         margin: 0 auto;
+         padding: 12px;
+     }
+ }
+
+
+ /* ---Realme Img-------- */
+
+ .mobileBrand1 {
+     width: 450px;
+     height: 520px;
+     background-color: rgb(249, 233, 250);
+     box-shadow: 0 8px 10px rgba(0, 0, 0, 0.25);
+     border-radius: 20px;
+ }
+
+ .brandPriceFlx1 {
+     margin-left: 30px;
+     margin-bottom: 30px;
+     font-size: 30px;
+ }
+
+ .mobBrand1 {
+     width: 400px;
+     display: block;
+     margin: auto;
+     padding: 20px;
+ }
+
+ @media (max-width: 1000px) {
+
+     .mobileBrand1 {
+         width: 360px;
+         height: auto;
+         /* better for responsive layouts */
+         padding-bottom: 20px;
+         border-radius: 16px;
+     }
+
+     .mobBrand1 {
+         width: 300px;
+         padding: 16px;
+     }
+
+     .brandPriceFlx1 {
+         margin-left: 20px;
+         margin-bottom: 20px;
+         font-size: 24px;
+     }
+ }
+
+ @media (max-width: 500px) {
+
+     .mobileBrand1 {
+         width: 100%;
+         max-width: 340px;
+         height: auto;
+         padding: 12px;
+         border-radius: 14px;
+         margin: 0 auto;
+     }
+
+     .mobBrand1 {
+         width: 100%;
+         max-width: 280px;
+         padding: 12px;
+         margin: 0 auto;
+     }
+
+     .brandPriceFlx1 {
+         margin-left: 0;
+         margin-bottom: 16px;
+         font-size: 20px;
+         text-align: center;
+         /* looks cleaner on mobile */
+     }
+ }
+
+
+ /* ----------- */
+
+ .brandPriceFlx {
+     display: flex;
+     justify-content: space-around;
+     font-size: 30px;
+     gap: 40px;
+ }
+
+ .cartFlx {
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+ }
+
+ .addCart {
+     font-size: 25px;
+     background-color: rgb(242, 179, 17);
+     text-align: center;
+     padding: 10px;
+     border-radius: 10px;
+     font-weight: 600;
+     height: 50px;
+     text-decoration: none;
+     color: black;
+ }
+
+ .price {
+     font-size: 30px;
+     text-align: center;
+     margin-bottom: 10px;
+ }
+
+ .colors {
+     display: flex;
+     align-items: center;
+     gap: 5px;
+ }
+
+ .colors img {
+     width: 32px;
+ }
+
+ @media (max-width: 1000px) {
+
+     .brandPriceFlx {
+         font-size: 24px;
+         gap: 20px;
+         justify-content: space-between;
+         padding: 0 10px;
+     }
+
+     .cartFlx {
+         justify-content: space-between;
+         gap: 20px;
+     }
+
+     .addCart {
+         font-size: 20px;
+         padding: 8px 16px;
+         height: auto;
+     }
+
+     .price {
+         font-size: 24px;
+     }
+
+     .colors img {
+         width: 26px;
+     }
+ }
+
+ @media (max-width: 500px) {
+
+     .brandPriceFlx {
+         flex-direction: column;
+         align-items: center;
+         font-size: 20px;
+         gap: 10px;
+     }
+
+     .cartFlx {
+         flex-direction: column;
+         gap: 12px;
+         align-items: center;
+     }
+
+     .addCart {
+         font-size: 18px;
+         padding: 8px 14px;
+         width: 80%;
+         height: auto;
+     }
+
+     .price {
+         font-size: 20px;
+         margin-bottom: 6px;
+     }
+
+     .colors {
+         gap: 6px;
+         justify-content: center;
+     }
+
+     .colors img {
+         width: 22px;
+     }
+ }
+
+
+
+ /* -------------Refridgerator/WashingMachine------------------- */
+
+ .allBrands {
+     font-size: 50px;
+     text-align: center;
+ }
+
+ .fridgeFlx {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     gap: 50px;
+
+ }
+
+ .fridgeFlx a {
+     text-decoration: none;
+     color: black;
+
+ }
+
+ .brands1 {
+     font-size: 50px;
+     margin-left: 300px;
+     margin-bottom: 70px;
+ }
+
+ #fridge {
+     border: 1px solid black;
+     padding: 10px;
+     border-radius: 10px;
+     box-shadow: 0px 0px 10px 0px;
+     background-color: #bd66f7;
+
+ }
+
+ .mobileBrandFlxWashing {
+     display: flex;
+     justify-content: center;
+     flex-wrap: wrap;
+     gap: 300px;
+ }
+
+ /* ---------- Tablet / small laptop (≤1000px) ---------- */
+ @media (max-width: 1000px) {
+     .allBrands {
+         font-size: 40px;
+         text-align: center;
+         margin-left: 0;
+     }
+
+     .brands1 {
+         font-size: 40px;
+         margin-left: 40px;
+         margin-bottom: 40px;
+         text-align: center;
+     }
+
+     .fridgeFlx {
+         gap: 30px;
+         padding: 0 20px;
+         flex-wrap: wrap;
+         justify-content: center;
+     }
+
+     .fridgeFlx a {
+         text-align: center;
+     }
+
+     #fridge {
+         padding: 12px;
+         border-radius: 10px;
+         box-shadow: 0 6px 12px rgba(0, 0, 0, 0.12);
+         background-color: #bd66f7;
+         width: calc(50% - 40px);
+         max-width: 420px;
+     }
+
+     .mobileBrandFlxWashing {
+         gap: 60px;
+         justify-content: center;
+         flex-wrap: wrap;
+         padding: 0 20px;
+     }
+ }
+
+ /* ---------- Mobile / small phones (≤500px) ---------- */
+ @media (max-width: 500px) {
+     .allBrands {
+         font-size: 30px;
+         text-align: center;
+     }
+
+     .brands1 {
+         font-size: 28px;
+         margin-left: 0;
+         margin-bottom: 24px;
+         text-align: center;
+     }
+
+     .fridgeFlx {
+         flex-direction: column;
+         gap: 18px;
+         padding: 0 12px;
+         align-items: center;
+     }
+
+     .fridgeFlx a {
+         width: 100%;
+         max-width: 360px;
+     }
+
+     #fridge {
+         width: 100%;
+         max-width: 360px;
+         padding: 10px;
+         box-shadow: 0 6px 10px rgba(0, 0, 0, 0.10);
+     }
+
+     .mobileBrandFlxWashing {
+         flex-direction: column;
+         gap: 20px;
+         padding: 0 12px;
+         align-items: center;
+     }
+ }
+
+
+
+ /* --------------Contact----------------- */
+
+ .form {
+     display: flex;
+     justify-content: center;
+     gap: 50px;
+ }
+
+ input {
+     width: 700px;
+     height: 50px;
+     margin-bottom: 30px;
+     padding: 50px;
+     border-radius: 10px;
+     background-color: rgb(235, 229, 229);
+     border: none;
+
+ }
+
+ input::placeholder {
+     color: black;
+     font-weight: 800;
+     font-size: 20px;
+ }
+
+ textarea {
+     width: 700px;
+     height: 250px;
+     margin-bottom: 30px;
+     padding: 20px;
+     border-radius: 10px;
+     background-color: rgb(235, 229, 229);
+     border: none;
+     font-weight: 800;
+     font-size: 20px;
+
+
+ }
+
+ .mediaSupport {
+     text-align: center;
+     font-size: 20px;
+ }
+
+ .socialMedia {
+     display: flex;
+     justify-content: center;
+     gap: 30px;
+ }
+
+ @media (max-width: 1000px) {
+
+     .form {
+         flex-direction: column;
+         align-items: center;
+         gap: 20px;
+     }
+
+     input,
+     textarea {
+         width: 90%;
+         max-width: 600px;
+         padding: 20px;
+         font-size: 18px;
+     }
+
+     input::placeholder {
+         font-size: 18px;
+     }
+
+     textarea {
+         height: 200px;
+     }
+ }
+
+ @media (max-width: 500px) {
+
+     .form {
+         flex-direction: column;
+         align-items: center;
+         gap: 15px;
+         width: 100%;
+     }
+
+     input,
+     textarea {
+         width: 90%;
+         max-width: 350px;
+         padding: 14px;
+         font-size: 16px;
+     }
+
+     input::placeholder {
+         font-size: 16px;
+     }
+
+     textarea {
+         height: 160px;
+         padding: 14px;
+     }
+
+     .mediaSupport {
+         font-size: 16px;
+     }
+
+     .socialMedia {
+         flex-direction: row;
+         gap: 15px;
+     }
+ }
+
+
+
+ /* --------Login--------------------- */
+
+ input[type="text1"] {
+     width: 500px;
+     height: 50px;
+     margin-bottom: 30px;
+     padding: 40px;
+     border-radius: 10px;
+     background-color: rgb(235, 229, 229);
+     border: none;
+ }
+
+ .login {
+     text-align: center;
+ }
+
+ @media (max-width: 1000px) {
+     .text1 {
+         width: 80%;
+         max-width: 400px;
+         padding: 25px;
+         font-size: 18px;
+     }
+
+     .login {
+         text-align: center;
+     }
+ }
+
+ @media (max-width: 500px) {
+     .text1 {
+         width: 90%;
+         max-width: 300px;
+         padding: 15px;
+         height: 45px;
+         font-size: 16px;
+     }
+
+     .login {
+         text-align: center;
+     }
+ }
+
+
+
+ /* watch categories */
+
+ .watchCategoriesFlx {
+     display: flex;
+     justify-content: center;
+     flex-wrap: wrap;
+     gap: 200px;
+     margin-top: 100px;
+ }
+
+ .watchCategoriesFlx img {
+     width: 400px;
+ }
+
+ @media (max-width: 1000px) {
+     .watchCategoriesFlx {
+         gap: 80px;
+         margin-top: 60px;
+     }
+
+     .watchCategoriesFlx img {
+         width: 300px;
+     }
+ }
+
+ @media (max-width: 500px) {
+     .watchCategoriesFlx {
+         flex-direction: column;
+         gap: 30px;
+         margin-top: 40px;
+         align-items: center;
+     }
+
+     .watchCategoriesFlx img {
+         width: 100%;
+         max-width: 280px;
+     }
+ }
+
+
+
+ /* watchfeatures */
+
+ .watchfeaturesFlx {
+     display: flex;
+     justify-content: center;
+     flex-wrap: wrap;
+     gap: 70px;
+     margin-top: 100px;
+ }
+
+ .watchfeaturesFlx img {
+     width: 300px;
+ }
+
+ .watchfeaturesFlx p {
+     text-align: start;
+     font-size: 30px;
+     margin-left: 40px;
+     font-weight: 900;
+ }
+
+ @media (max-width: 1000px) {
+
+     .watchfeaturesFlx {
+         gap: 40px;
+         margin-top: 70px;
+     }
+
+     .watchfeaturesFlx img {
+         width: 240px;
+     }
+
+     .watchfeaturesFlx p {
+         font-size: 24px;
+         margin-left: 20px;
+     }
+ }
+
+ @media (max-width: 500px) {
+
+     .watchfeaturesFlx {
+         flex-direction: column;
+         align-items: center;
+         gap: 25px;
+         margin-top: 40px;
+     }
+
+     .watchfeaturesFlx img {
+         width: 100%;
+         max-width: 220px;
+     }
+
+     .watchfeaturesFlx p {
+         font-size: 18px;
+         text-align: center;
+         margin-left: 0;
+         width: 100%;
+     }
+ }
+
+
+ /* .watchProductFlx */
+
+ .watchProductFlx {
+     display: flex;
+     justify-content: center;
+     align-items: end;
+     gap: 40px;
+ }
+
+ .watchProductFlx img {
+     width: 600px;
+
+ }
+
+ .watchProductFlx p {
+     font-size: 35px;
+ }
+
+ .features {
+     text-align: center;
+     font-size: 50px;
+
+ }
+
+ .wpFlx {
+     display: flex;
+     justify-content: flex-start;
+     align-items: center;
+     gap: 70px;
+
+     width: 80%;
+     height: 30%;
+     background-color: rgb(250, 239, 224);
+     border-radius: 10px;
+     margin: auto;
+ }
+
+ .wpFlx img {
+     width: 450px;
+     margin-left: -50px;
+ }
+
+ .wpFlx p {
+     font-size: 35px;
+ }
+
+ /* ----------------- TABLET / small laptop (≤1000px) ----------------- */
+ @media (max-width: 1000px) {
+
+     /* make the main product row wrap and reduce image sizes */
+     .watchProductFlx {
+         flex-wrap: wrap;
+         gap: 24px;
+         align-items: center;
+         padding: 20px 12px;
+     }
+
+     .watchProductFlx img {
+         width: 420px;
+         max-width: 90%;
+         height: auto;
+     }
+
+     .watchProductFlx p {
+         font-size: 26px;
+     }
+
+     .features {
+         font-size: 40px;
+         padding: 0 12px;
+     }
+
+     /* wpFlx: make it flow (no fixed height), reduce widths and remove negative margin */
+     .wpFlx {
+         flex-direction: column;
+         gap: 18px;
+         width: 92%;
+         height: auto;
+         padding: 18px;
+         background-color: rgb(250, 239, 224);
+         margin: 20px auto;
+     }
+
+     .wpFlx img {
+         width: 320px;
+         max-width: 100%;
+         margin-left: 0;
+         /* remove negative offset for smaller screens */
+         display: block;
+         margin-inline: auto;
+     }
+
+     .wpFlx p {
+         font-size: 24px;
+         text-align: center;
+         padding: 0 8px;
+     }
+ }
+
+ /* ----------------- MOBILE / small phones (≤500px) ----------------- */
+ @media (max-width: 500px) {
+
+     .watchProductFlx {
+         flex-direction: column;
+         gap: 16px;
+         align-items: center;
+         padding: 12px;
+     }
+
+     .watchProductFlx img {
+         width: 100%;
+         max-width: 320px;
+         height: auto;
+     }
+
+     .watchProductFlx p {
+         font-size: 20px;
+         text-align: center;
+         padding: 0 12px;
+     }
+
+     .features {
+         font-size: 34px;
+         padding: 0 12px;
+     }
+
+     .wpFlx {
+         width: 100%;
+         max-width: 360px;
+         flex-direction: column;
+         gap: 12px;
+         padding: 12px;
+         border-radius: 10px;
+         margin: 12px auto;
+         height: auto;
+     }
+
+     .wpFlx img {
+         width: 100%;
+         max-width: 300px;
+         margin-left: 0;
+         margin-inline: auto;
+     }
+
+     .wpFlx p {
+         font-size: 18px;
+         text-align: center;
+         padding: 0 10px;
+     }
+ }
+
+
+ /* ----------delevery page-------------- */
+
+ .deleveryflx {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     gap: 70px;
+     font-size: 50px;
+     text-align: center;
+ }
+
+ .deleveryflx img {
+     width: 700px;
+ }
+
+ .order {
+     font-size: 40px;
+     margin-left: 200px;
+ }
+
+ .orderFlx {
+     display: flex;
+     justify-content: center;
+     align-items: end;
+     gap: 50px;
+     font-size: 30px;
+ }
+
+ .scooterFlx {
+     display: flex;
+     flex-direction: column;
+ }
+
+ .home {
+     font-size: 40px;
+     text-decoration: none;
+     width: 250px;
+     background-color: #21A8A2;
+     padding: 10px;
+     color: white;
+     border-radius: 10px;
+     text-align: center;
+     display: block;
+     margin: auto;
+
+ }
+
+ @media (max-width: 1000px) {
+
+     .deleveryflx {
+         gap: 40px;
+         font-size: 36px;
+         flex-wrap: wrap;
+         padding: 20px;
+     }
+
+     .deleveryflx img {
+         width: 450px;
+     }
+
+     .order {
+         font-size: 32px;
+         margin-left: 0;
+         text-align: center;
+     }
+
+     .orderFlx {
+         gap: 30px;
+         font-size: 24px;
+         flex-wrap: wrap;
+     }
+
+     .home {
+         font-size: 28px;
+         width: 200px;
+         padding: 8px 14px;
+     }
+ }
+
+ @media (max-width: 500px) {
+
+     .deleveryflx {
+         flex-direction: column;
+         gap: 20px;
+         font-size: 24px;
+         padding: 10px;
+     }
+
+     .deleveryflx img {
+         width: 100%;
+         max-width: 300px;
+     }
+
+     .order {
+         font-size: 24px;
+         margin-left: 0;
+         text-align: center;
+     }
+
+     .orderFlx {
+         flex-direction: column;
+         gap: 12px;
+         font-size: 20px;
+         align-items: center;
+     }
+
+     .home {
+         font-size: 20px;
+         width: 150px;
+         padding: 6px 10px;
+     }
+ }
+
+
+
+ /* payment */
+
+ .payment {
+     text-align: center;
+ }
+
+ .atm {
+     width: 700px;
+     margin-bottom: 30px;
+
+ }
+
+ .continue {
+     font-size: 40px;
+     text-align: center;
+     width: 700px;
+     background-color: #13B82E;
+     text-decoration: none;
+     padding: 20px;
+     border-radius: 10px;
+     color: white;
+     display: block;
+     margin: auto;
+ }
+
+ /* ---------- Tablet / small laptop (≤1000px) ---------- */
+ @media (max-width: 1000px) {
+     .payment {
+         padding: 24px 12px;
+         text-align: center;
+     }
+
+     .atm {
+         width: 90%;
+         max-width: 600px;
+         /* keep it from being too wide on large tablets */
+         margin-bottom: 24px;
+         display: block;
+         margin-left: auto;
+         margin-right: auto;
+     }
+
+     .continue {
+         width: 90%;
+         max-width: 600px;
+         font-size: 32px;
+         padding: 16px;
+         border-radius: 10px;
+         display: block;
+         margin: 0 auto;
+         text-align: center;
+     }
+ }
+
+ /* ---------- Mobile / small phones (≤500px) ---------- */
+ @media (max-width: 500px) {
+     .payment {
+         padding: 16px 10px;
+         text-align: center;
+     }
+
+     .atm {
+         width: 95%;
+         max-width: 360px;
+         margin-bottom: 18px;
+         display: block;
+         margin-left: auto;
+         margin-right: auto;
+     }
+
+     .continue {
+         width: 95%;
+         max-width: 320px;
+         font-size: 20px;
+         padding: 12px;
+         border-radius: 8px;
+         display: block;
+         margin: 0 auto;
+     }
+ }
+
+
+
+ /* payment Method */
+
+ .forms {
+     text-align: center;
+ }
+
+ .paymentMethod {
+     font-size: 30px;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+ }
+
+ .paymentMethod p {
+     margin-bottom: 20px;
+ }
+
+ .upiFlx {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+
+ .gpay {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+ }
+
+ @media (max-width: 1000px) {
+
+     .paymentMethod {
+         font-size: 24px;
+         gap: 10px;
+     }
+
+     .paymentMethod p {
+         font-size: 22px;
+         margin-bottom: 16px;
+     }
+
+     .upiFlx {
+         gap: 30px;
+         flex-wrap: wrap;
+         padding: 10px;
+     }
+
+     .gpay {
+         gap: 8px;
+     }
+ }
+
+ @media (max-width: 500px) {
+
+     .paymentMethod {
+         font-size: 20px;
+         gap: 8px;
+         text-align: center;
+     }
+
+     .paymentMethod p {
+         font-size: 18px;
+         margin-bottom: 12px;
+     }
+
+     .upiFlx {
+         flex-direction: column;
+         gap: 15px;
+         padding: 10px 0;
+     }
+
+     .gpay {
+         gap: 6px;
+         text-align: center;
+     }
+ }
+
+ /* <!-- -----------Cart Page--------------- --> */
+
+ .cartImgFlx {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     gap: 200px;
+ }
+
+
+ .cartCard {
+     width: 500px;
+     border: 1px solid black;
+     padding: 20px;
+     border-radius: 10px;
+     margin-top: 20px;
+ }
+
+ .head {
+     font-size: 30px;
+ }
+
+ .red {
+     color: red;
+     font-size: 23px;
+     margin-bottom: 20px;
+     margin-top: 10px;
+ }
+
+ .starBuyFlx {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     gap: 90px;
+ }
+
+ .buys {
+     background-color: #13B82E;
+     color: white;
+     padding: 12px 50px;
+     border-radius: 10px;
+     font-size: 20px;
+ }
+
+ .cartCardFlx {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     margin-bottom: 30px;
+ }
+
+ .oppoFlx {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     gap: 500px;
+     /* margin-bottom: 20px; */
+
+
+ }
+
+ .oppo {
+     font-size: 35px;
+ }
+
+ .pr {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     gap: 50px;
+
+ }
+
+ .close-btn {
+     font-size: 30px;
+     text-decoration: line-through;
+     text-decoration-color: red;
+ }
+
+ .reds {
+     color: red;
+     font-size: 30px;
+     margin-bottom: 20px;
+     margin-top: 10px;
+ }
+
+ .TotalFlx {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     gap: 830px;
+ }
+
+ .green {
+     color: #13B82E;
+     font-size: 30px;
+ }
+
+ .continue {
+     font-size: 40px;
+     text-align: center;
+     width: 700px;
+     background-color: #13B82E;
+     text-decoration: none;
+     padding: 20px;
+     border-radius: 10px;
+     color: white;
+     display: block;
+     margin: auto;
+ }
+
+ /* ---------- TABLET / small laptop (≤1000px) ---------- */
+ @media (max-width: 1000px) {
+     .cartImgFlx {
+         gap: 60px;
+         padding: 20px;
+         flex-wrap: wrap;
+     }
+
+     .cartCard {
+         width: 420px;
+         padding: 18px;
+         margin-top: 18px;
+     }
+
+     .head {
+         font-size: 26px;
+     }
+
+     .red {
+         font-size: 20px;
+         margin-bottom: 14px;
+         margin-top: 8px;
+     }
+
+     .starBuyFlx {
+         gap: 40px;
+     }
+
+     .buys {
+         padding: 10px 36px;
+         font-size: 18px;
+     }
+
+     .cartCardFlx {
+         margin-bottom: 22px;
+         gap: 24px;
+         flex-wrap: wrap;
+     }
+
+     .oppoFlx {
+         gap: 120px;
+         flex-wrap: wrap;
+         justify-content: center;
+     }
+
+     .oppo {
+         font-size: 30px;
+     }
+
+     .pr {
+         gap: 30px;
+     }
+
+     .close-btn {
+         font-size: 26px;
+     }
+
+     .reds {
+         font-size: 26px;
+         margin-bottom: 14px;
+     }
+
+     .TotalFlx {
+         gap: 40px;
+         flex-wrap: wrap;
+         justify-content: center;
+     }
+
+     .green {
+         font-size: 26px;
+     }
+
+     .continue {
+         width: 90%;
+         max-width: 560px;
+         font-size: 32px;
+         padding: 16px;
+     }
+ }
+
+ /* ---------- MOBILE / small phones (≤500px) ---------- */
+ @media (max-width: 500px) {
+     .cartImgFlx {
+         flex-direction: column;
+         gap: 18px;
+         padding: 12px;
+         align-items: center;
+     }
+
+     .cartCard {
+         width: 100%;
+         max-width: 340px;
+         padding: 14px;
+         margin-top: 12px;
+     }
+
+     .head {
+         font-size: 22px;
+     }
+
+     .red {
+         font-size: 16px;
+         margin-bottom: 10px;
+         margin-top: 8px;
+     }
+
+     .starBuyFlx {
+         gap: 18px;
+         flex-direction: column;
+     }
+
+     .buys {
+         padding: 10px 26px;
+         font-size: 16px;
+         width: 80%;
+         margin: 0 auto;
+     }
+
+     .cartCardFlx {
+         margin-bottom: 18px;
+         flex-direction: column;
+         gap: 12px;
+     }
+
+     .oppoFlx {
+         gap: 20px;
+         flex-direction: column;
+         align-items: center;
+     }
+
+     .oppo {
+         font-size: 24px;
+     }
+
+     .pr {
+         gap: 12px;
+         flex-direction: column;
+     }
+
+     .close-btn {
+         font-size: 22px;
+     }
+
+     .reds {
+         font-size: 20px;
+         margin-bottom: 10px;
+     }
+
+     .TotalFlx {
+         flex-direction: column;
+         gap: 12px;
+         align-items: center;
+         padding: 0 8px;
+     }
+
+     .green {
+         font-size: 22px;
+     }
+
+     .continue {
+         width: 95%;
+         max-width: 320px;
+         font-size: 20px;
+         padding: 12px;
+     }
+ }
